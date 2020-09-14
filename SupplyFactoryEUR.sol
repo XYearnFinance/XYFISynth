@@ -31,7 +31,7 @@ contract Ownable is Context {
     address private _owner;
 
     event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);
-    constructor () internal {
+    constructor () internal { 
         _owner = _msgSender();
         emit OwnershipTransferred(address(0), _owner); 
     }
