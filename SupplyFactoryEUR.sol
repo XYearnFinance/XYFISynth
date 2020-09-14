@@ -33,7 +33,7 @@ contract Ownable is Context {
     event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);
     constructor () internal {
         _owner = _msgSender();
-        emit OwnershipTransferred(address(0), _owner);
+        emit OwnershipTransferred(address(0), _owner); 
     }
     function owner() public view returns (address) {
         return _owner;
